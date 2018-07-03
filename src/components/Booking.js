@@ -23,7 +23,7 @@ class Booking extends Component {
         }
     }
     render() {
-        let medium = window.innerWidth < 900 ? true : false
+        // let medium = window.innerWidth < 900 ? true : false
         let months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
         const { condoSelected, arrivalDate, departureDate, language, condosModalOpen, toggleCondoModal } = this.props
         let arrive = new Date(arrivalDate)

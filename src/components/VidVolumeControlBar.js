@@ -55,7 +55,7 @@ class VidVolumeControlBar extends Component{
     handleStop(e, x){
         e.preventDefault()
         console.log('stop', (10 * ~~((100 + (x)) / 9)))
-        const { total, handleClick } = this.props
+        const {handleClick } = this.props
         handleClick((10 * ~~((100 + (x)) / 9)))
         this.setState({
             x: (10 * ~~((100 + (x)) / 9)),
